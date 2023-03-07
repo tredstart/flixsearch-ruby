@@ -1,0 +1,8 @@
+<%= form_with url: flixsearch_create_path, method: :post, id: "new_search", class: "form" do |form| %>
+  <%= form.label :city, "City: " %>
+  <%= form.text_field :city, class: "form__input", autofocus: "autofocus" %>
+  <%= form.label :date, "Date: " %>
+  <%= form.date_field :date, class: "form__date" %>
+  <%= form.submit "Search", name: "commit", class: "btn btn--primary" %>
+<% end %>
+

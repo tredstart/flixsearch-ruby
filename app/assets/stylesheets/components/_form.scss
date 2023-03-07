@@ -1,0 +1,45 @@
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-xs);
+  justify-content: center;
+
+  &__group {
+    flex: 1;
+  }
+
+  &__date{
+    display: block;
+    width: 20%;
+    max-width: 20%;
+    padding: var(--space-xxs) var(--space-xs);
+    border: var(--border);
+    border-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+    outline: var(--color-secondary);
+    transition: box-shadow 250ms;
+
+  }
+
+  &__input {
+    display: block;
+    width: 80%;
+    max-width: 80%;
+    padding: var(--space-xxs) var(--space-xs);
+    border: var(--border);
+    border-color: var(--color-secondary);
+    border-radius: var(--border-radius);
+    outline: var(--color-secondary);
+    transition: box-shadow 250ms;
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--color-glint);
+    }
+
+    &--invalid {
+      border-color: var(--color-primary);
+    }
+
+  }
+}

@@ -1,0 +1,5 @@
+<%= turbo_stream.update "result" do %>
+  <ul>
+    <%= render partial: "result", collection: @results %>
+  </ul>
+<% end %>

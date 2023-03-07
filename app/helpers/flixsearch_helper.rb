@@ -1,0 +1,2 @@
+module FlixsearchHelper
+end

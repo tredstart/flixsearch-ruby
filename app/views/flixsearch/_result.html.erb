@@ -1,0 +1,13 @@
+<div class="wrap-collapsible">
+  <input id=<%= "check_#{result["id"]}" %> class="toggle" type="checkbox">
+  <label for=<%= "check_#{result["id"]}" %> class="lbl-toggle"><%= result["from"] %></label>
+
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <ul>
+        <%= render partial: "stop", collection: result["direct_to"] %>
+      </ul>
+    </div>
+  </div>
+
+</div>
